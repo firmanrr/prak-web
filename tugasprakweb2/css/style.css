@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+}
+/*Mengatur foto*/
+.sidebar {
+    background-color: #f0f0f0;
+    padding: 30px;
+    width: 100%;
+    float: left;
+    text-align: center; }
+  .sidebar img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px; }
+  .sidebar h2 {
+    padding: 20px;
+    margin: 0; }
+  .menu {
+    list-style: none;
+    padding: 0;
+    text-align: center;}
+  .menu li {
+    display: inline;
+    margin-right: 20px; /* Memberikan jarak antara setiap tautan */
+  }
+  .menu a {
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.2s;
+  }
+  .menu a:hover {
+    background-color: #fcadad; 
+  }
+  .content iframe {
+    width: 100%; 
+    height: 410px; 
+    border: 0; 
+  }
+body{/*Mengatur font yang dipakai dan background halaman*/
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: #280872;
+}
+.container{/* Membuat container menjadi layout flexbox dan kotak login di tengah */
+    display: flex;
+    flex-basis: wrap;
+    justify-content: center;
+}
+input, select{/*mengatur agar tag input dan select memenuhi container dan tampilan lebih bagus */
+    width: 100%;
+    padding: 15px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+}
+input[type=submit]{/*mengatur tampilan tombol submit */
+    background-color: #280872;
+    border: none;
+    color: #fff;
+    text-decoration:none ;
+    cursor: pointer;
+}
+/* Layout */
+header{/* Mengatur desain header */
+    background: #280872; color: #fff;
+    padding: 15px 20px;
+    font-size: 20px;
+}
+aside{/* Mengatur lebar menu 50% dengan background hitam */
+    flex: 50%;
+    background: #ffffff;
+}
+section.main{/* Mengatur lebar konten utama 50% dengan background putih */
+    flex:50%;
+    background: #fff; min-height: 530px; padding: 15px 20px; flex-grow: 1;
+}
+/*mengatur layout pada layar kecil (responsiv) */
+@media(max-width:700px){
+    .container{
+        flex-direction: column;
+    }
+}
+/* Halaman Form */
+.form-group{/* Mengatur form-group agar tidak terpengaruh float */ 
+    clear:both;
+}
+.form-group label{ /* Mengatur lebar label 30% dengan teks bold */
+    display: block;
+    padding: 15px 0;
+    float: left;
+    width: 30%;
+    font-weight: bold;
+}
+.form-group.input{/* Mengatur lebar .input 50% dan sejajar dengan label */
+    display: block; 
+    width: 50%; 
+    float: left;
+}
+input[type=radio]{/* Mengatur input radio, tombol submit dan tombol reset*/
+    width: 50px;
+    }
+.tombol.simpan{
+    background: #259fea;
+    }
+.tombol.reset{
+    background: #f39536;
+    }
+/* Memebuat tampilan form menumpuk pada layar kecil */ 
+@media (max-width:700px) {
+    .form-group label, .form-group.input{ 
+        width: 100%;
+    }
+}

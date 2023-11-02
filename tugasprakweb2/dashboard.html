@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Laporan 2 Web</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/png" href="logo.png">
+    </head>
+    <body>
+        <header>
+            Biodata Diri
+        </header>
+        <div class="container">
+            <aside>
+                <div class="sidebar">
+                    <img src="logo.png" alt="Gambar Profil">
+                    <h2>Firman Reski Ramadhan</h2>
+                    <p> Praktikan Pemrograman Web 2023</p>
+                    <div class="contact-info">
+                      <p>Email: <a href="https://mail.google.com/mail/u/0/">firmanrr11@gmail.com</a></p>
+                      <p>Telepon: +6283138700671</p>
+                    </div>
+                    <ul class="menu">
+                        <li><a href="#">SD</a></li>
+                        <li><a href="#">SMP</a></li>
+                        <li><a href="#">SMK</a></li>
+                    </ul>
+                    <div class="content">
+                    <iframe src="https://firmanrr.github.io/smom/" width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </aside>
+        <section class="main">
+            <h2 class="judul">Perbarui Biodata Praktikan</h2> 
+                <div class="form-group">
+                    <label for="foto">Foto</label>
+                    <div class="input"> <input type="file" id="foto"> </div> 
+                </div>
+                <div class="form-group">
+                    <label for="nama">Nama</label>
+                    <div class="input"> <input type="text" id="nama"> </div> 
+                </div>
+                <div class="form-group">
+                    <label for="nama">Email</label>
+                    <div class="input"> <input type="email" id="email"> </div> 
+                </div>
+                <div class="form-group">
+                    <label for="jk">Jenis Kelamin</label>
+                    <input type="radio" id="jk" name="jk" value="L"> Laki-laki
+                    <input type="radio" id="jk" name="jk" value="P"> Perempuan
+                </div>
+                <div class="form-group">
+                    <label for="jk">Alamat</label>
+                    <textarea rows="4" cols="50"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="nomor-telepon">Nomor Telepon</label>
+                    <input type="tel" id="nomor-telepon" name="nomor-telepon" pattern="[0-9]{10}" placeholder="Contoh: 1234567890" required>
+                </div>
+                <div class="form-group">
+                    <label for="tanggal">Tanggal Lahir</label>
+                    <div class="input"><input type="date" id="tanggal"></div> 
+                </div>
+                <div class="form-group">
+                    <label for="jabatan">Kewarganegaraan</label> 
+                    <div class="input">
+                        <select id="jabatan">
+                            <option value="wni">Warga Negara Indonesia</option> 
+                            <option value="wna">Warga Negara Asing</option> 
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Simpan" class="tombol simpan"> 
+                    <input type="reset" value="Batal" class="tombol reset">
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
